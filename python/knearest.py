@@ -83,7 +83,7 @@ cv_scores = []
 # perform 10-fold cross validation
 for k in neighbors:
     knn = KNeighborsClassifier(n_neighbors=k)
-    scores = cross_val_score(knn, X_mixedequal, male_zero, cv=5, scoring='accuracy')
+    scores = cross_val_score(knn, X_mixedequal, male_zero, cv=5, scoring='roc_auc')
     cv_scores.append(scores.mean())
 
 neighbors = list(filter(lambda x: x % 2 != 0, myList))
@@ -103,7 +103,5 @@ plt.savefig("/home/users/bhargavy/gait/python/optimalk.png")
 
 cvscores = open('/home/users/bhargavy/gait/python/cvscores.txt','w')
 
-for item in cv_scores:
-    cvscores.write("%s\n" % item)
-
+cvscores.write(str(optimal_k))
 

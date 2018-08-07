@@ -1,0 +1,5 @@
+Fitting 5 folds for each of 5 candidates, totalling 25 fits
+[CV] n_estimators=10, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, max_depth=50, bootstrap=True 
+[CV]  n_estimators=10, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, max_depth=50, bootstrap=True, total=  33.2s
+[CV] n_estimators=670, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, max_depth=30, bootstrap=True 
+[CV]  n_estimators=670, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, max_depth=30, bootstrap=True, total=31.1min
